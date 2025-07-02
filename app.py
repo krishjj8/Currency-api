@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path=".env")
 
 # ✅ Read API key from environment
-API_KEY = os.getenv("b56cca8233c2fefb82ddd1f4")
+API_KEY = os.getenv("EXCHANGE_API_KEY")
 print("🔑 Loaded API KEY:", API_KEY)  # Only for debugging — remove in production
 
 # ✅ Base URL for the external API
