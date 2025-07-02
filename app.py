@@ -16,6 +16,11 @@ BASE_URL = f"https://v6.exchangerate-api.com/v6/{API_KEY}"
 # ✅ Initialize FastAPI app
 app = FastAPI(title="Currency Exchange API")
 
+@app.get("/")
+def read_root():
+    return {"message": "Currency API is live 🚀"}
+
+
 # ✅ Route to get latest exchange rates
 @app.get("/latest/{base}")
 def get_latest(base: str):
